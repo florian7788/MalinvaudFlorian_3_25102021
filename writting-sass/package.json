@@ -1,0 +1,11 @@
+{
+  "name": "writting-sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./FichierSass.scss:./P3_03_styles.css"
+  },
+  "author": "malinvaud florian",
+  "license": "ISC"
+}

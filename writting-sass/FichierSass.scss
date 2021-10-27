@@ -1,0 +1,94 @@
+$color-primary:#9356DC;
+$color-secondary:#FF79DA;
+$color-tertiary:#99E2D0;
+$font-size:7rem 5rem 4rem 2rem;
+/* GENERAL */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Shrikhand, Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER */
+
+header{
+    width: 100%;
+    a{
+      display: flex;
+      justify-content: center;
+      margin: auto;
+    }
+        .logo{
+            width: 50%;
+            height: 80px;
+        }
+}
+/* RESERVE*/
+
+.reserve{
+    display: flex;
+    flex-direction: column;
+    background-color: #eaeaea;
+    font-size: 1.2rem;
+    .search{
+        display: flex;
+        justify-content: center;
+        height: 3rem;
+    }
+        .geo{
+            background-color: #eaeaea;
+            border: none;
+            width: 1.5rem;
+        }
+            .ville{
+                text-decoration: none;
+                background-color: #eaeaea;
+                border: none;
+                padding-left: 1rem;
+            }
+    .introduction{
+        background-color: #f6f6f6;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        h2{
+            margin: 2rem 5rem;
+        } 
+        p{
+            margin: 1rem 5rem;
+        }
+    }
+    .explore{
+        width: 50%;
+        height: 3rem;
+        margin: auto;
+        border-radius: 2rem;
+        color: white;
+        background-color: $color-secondary;
+    }
+}
+
+/* Fonctionnement */
+
+.Fonctionnement{
+    margin-top: 1rem;
+    h2{
+        margin-left: 1rem;
+    }
+    button{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+}
