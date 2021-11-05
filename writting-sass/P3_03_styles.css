@@ -6,7 +6,6 @@
 }
 
 body {
-  font-family: Shrikhand, Roboto, sans-serif;
   font-size: 16px;
   line-height: 20px;
 }
@@ -14,6 +13,14 @@ body {
 .container {
   display: flex;
   flex-direction: column;
+}
+
+h2 {
+  font-family: Shrikhand;
+}
+
+p {
+  font-family: Roboto;
 }
 
 /* HEADER */
@@ -27,7 +34,6 @@ header a {
 }
 header .logo {
   width: 50%;
-  height: 80px;
 }
 
 /* RESERVE*/
@@ -60,31 +66,125 @@ header .logo {
   flex-direction: column;
 }
 .reserve .introduction h2 {
-  margin: 2rem 5rem;
+  font-size: 2rem;
+  margin: 3rem 4rem 1.5rem 4rem;
+  text-align: center;
 }
 .reserve .introduction p {
-  margin: 1rem 5rem;
+  font-size: 1.5rem;
+  margin: 0 1rem;
+  text-align: center;
 }
-.reserve .explore {
+.reserve .introduction .explore {
   width: 50%;
   height: 3rem;
-  margin: auto;
+  margin: 3rem auto;
   border-radius: 2rem;
+  border-style: none;
   color: white;
   background-color: #FF79DA;
 }
 
 /* Fonctionnement */
 .Fonctionnement {
-  margin-top: 1rem;
+  margin: 4rem 0;
 }
 .Fonctionnement h2 {
-  margin-left: 1rem;
+  margin: 1rem;
 }
-.Fonctionnement button {
+.Fonctionnement nav {
   display: flex;
   flex-direction: column;
+  gap: 2rem;
+  width: 90%;
   margin: auto;
+}
+.Fonctionnement nav a {
+  font-size: 1.5rem;
+  height: 5rem;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  color: black;
+  background-color: #eaeaea;
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  text-decoration: none;
+  box-shadow: 0 0.75rem 0.75rem rgba(0, 0, 0, 0.2);
+  transition: all 200ms linear;
+}
+.Fonctionnement nav a:hover,
+.Fonctionnement nav a:focus,
+.Fonctionnement nav a.active {
+  background-color: #e5b9e5;
+  color: purple;
+}
+.Fonctionnement nav a:focus {
+  border: 1px solid purple;
+  outline: none;
+}
+.Fonctionnement nav a::before {
+  display: block;
+  position: absolute;
+  left: -12px;
+  top: 25px;
+  height: 25px;
+  width: 25px;
+  line-height: 25px;
+  text-align: center;
+  color: white;
+  background-color: purple;
+  border-radius: 100%;
+}
+.Fonctionnement nav a:nth-child(1)::before {
+  content: "1";
+}
+.Fonctionnement nav a:nth-child(2)::before {
+  content: "2";
+}
+.Fonctionnement nav a:nth-child(3)::before {
+  content: "3";
+}
+
+/* MENU */
+.menu {
+  background-color: #eaeaea;
+}
+.menu h2 {
+  margin: 4rem 0 0 2rem;
+}
+.menu .card {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
+.menu .card img {
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 0.75rem 0.75rem 0 0;
+}
+.menu .card div {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0 0 0.75rem 0.75rem;
+  background-color: white;
+  padding-left: 0.5rem;
+}
+.menu .card div div {
+  flex-direction: column;
+  margin: 1rem 0;
+}
+.menu .card div div p {
+  margin-top: 0.2rem;
+}
+.menu .card div .far {
+  margin: 1rem 3rem 0 0;
+}
+.menu .card div .far .far :active {
+  color: purple;
 }
 
 /*# sourceMappingURL=P3_03_styles.css.map */
