@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./FichierSass.scss:./P3_03_styles.css"
+    "sass": "sass --watch ./FichierSass.scss:./styles.css"
   },
   "author": "malinvaud florian",
   "license": "ISC"
