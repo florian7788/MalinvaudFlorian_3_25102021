@@ -74,13 +74,14 @@ header .logo {
   text-align: center;
 }
 .reserve .introduction .explore {
-  width: 50%;
-  height: 3rem;
+  width: 65%;
+  height: 4rem;
+  font-size: 1.5rem;
   margin: 3rem auto;
   border-radius: 2rem;
   border-style: none;
   color: white;
-  background-color: #FF79DA;
+  background: linear-gradient(170deg, #ff93e1, 50%, #782cd3);
 }
 
 /* Fonctionnement */
@@ -181,9 +182,10 @@ header .logo {
 }
 .menu .card div .fa-heart {
   margin: 1rem 3rem 0 0;
+  transition: transform 400ms #9356DC;
 }
-.menu .card div .fa-heart:hover {
-  background-color: purple;
+.menu .card div .fa-heart:active {
+  transition: transform cubic-bezier(0, 0.75, 0.08, 1);
 }
 
 /*# sourceMappingURL=styles.css.map */

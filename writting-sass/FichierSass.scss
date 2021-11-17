@@ -77,13 +77,14 @@ header{
             text-align: center;
         }
         .explore{
-            width: 50%;
-            height: 3rem;
+            width: 65%;
+            height: 4rem;
+            font-size: 1.5rem;
             margin:3rem auto;
             border-radius: 2rem;
             border-style: none;
             color: white;
-            background-color: $color-secondary;
+            background: linear-gradient(170deg, lighten($color-secondary, 5), 50%, darken($color-primary, 10));
         }
     }
     
@@ -182,8 +183,11 @@ header{
                     }
                     .fa-heart{
                         margin: 1rem 3rem 0 0;
-                        &:hover{
-                            background-color: purple;
+                        transition: transform 400ms $color-primary;
+                        &:active{
+                            
+                            transition: transform cubic-bezier(0, .75, .08, 1);
+                           
                         }
                     }
                 }
