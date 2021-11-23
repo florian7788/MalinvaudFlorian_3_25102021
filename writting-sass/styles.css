@@ -181,11 +181,37 @@ header .logo {
   margin-top: 0.2rem;
 }
 .menu .card div .fa-heart {
-  margin: 1rem 3rem 0 0;
-  transition: transform 400ms #9356DC;
+  font-size: 25px;
+  font-weight: 600;
 }
-.menu .card div .fa-heart:active {
-  transition: transform cubic-bezier(0, 0.75, 0.08, 1);
+.menu .card div .fa-heart::before {
+  font-weight: 600;
+  transition: color 0.4s ease-out;
+}
+.menu .card div .fa-heart:hover::before {
+  color: #9356DC;
+}
+
+/* FOOTER */
+footer {
+  background-color: #353535;
+  color: #fff;
+}
+footer div {
+  display: flex;
+  flex-direction: column;
+}
+footer div h3 {
+  margin: 1.5rem;
+}
+footer div div {
+  margin-left: 2rem;
+}
+footer div div a {
+  padding-bottom: 1rem;
+}
+footer div div a .fas {
+  padding-right: 0.5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

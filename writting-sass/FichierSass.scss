@@ -181,16 +181,41 @@ header{
                             margin-top: 0.2rem;
                         }
                     }
-                    .fa-heart{
-                        margin: 1rem 3rem 0 0;
-                        transition: transform 400ms $color-primary;
-                        &:active{
-                            
-                            transition: transform cubic-bezier(0, .75, .08, 1);
-                           
-                        }
+                    .fa-heart {
+                        font-size: 25px;
+                        font-weight: 600;
+                    }
+                    .fa-heart::before {
+                        font-weight: 600;
+                        transition: color 0.4s ease-out;
+                    }
+                    .fa-heart:hover::before{
+                        color: #9356DC;
                     }
                 }
-            
-        }          
+            }       
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #353535;
+    color: #fff;
+    div{
+        display: flex;
+        flex-direction: column;
+        h3{
+            margin: 1.5rem;
+        }
+        div{
+            margin-left: 2rem;
+            a{
+                padding-bottom: 1rem;
+                .fas{
+                    padding-right: 0.5rem;
+                }
+            }
+        }
+        
+    }
 }
