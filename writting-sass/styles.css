@@ -108,7 +108,7 @@ header .logo {
   gap: 1rem;
   padding: 1rem 2rem;
   color: black;
-  background-color: #eaeaea;
+  background-color: #f6f6f6;
   border: 1px solid transparent;
   border-radius: 1rem;
   text-decoration: none;
@@ -155,41 +155,68 @@ header .logo {
 .menu h2 {
   margin: 4rem 0 0 2rem;
 }
-.menu .card {
+.menu a {
+  text-decoration: none;
+}
+.menu a .card {
+  position: relative;
   display: flex;
   flex-direction: column;
   margin: 2rem;
 }
-.menu .card img {
+.menu a .card img {
   object-fit: cover;
-  object-position: center center;
   border-radius: 0.75rem 0.75rem 0 0;
-  height: 278px;
+  height: 200px;
 }
-.menu .card div {
+.menu a .card div {
   display: flex;
   justify-content: space-between;
   border-radius: 0 0 0.75rem 0.75rem;
   background-color: white;
   padding-left: 0.5rem;
 }
-.menu .card div div {
+.menu a .card div div {
   flex-direction: column;
   margin: 1rem 0;
 }
-.menu .card div div p {
+.menu a .card div div p {
   margin-top: 0.2rem;
 }
-.menu .card div .fa-heart {
+.menu a .card div .fa-heart {
   font-size: 25px;
   font-weight: 600;
+  position: relative;
+  right: 20px;
+  top: 20px;
 }
-.menu .card div .fa-heart::before {
+.menu a .card div .fa-heart::before {
   font-weight: 600;
   transition: color 0.4s ease-out;
 }
-.menu .card div .fa-heart:hover::before {
+.menu a .card div .fa-heart:hover::before {
   color: #9356DC;
+}
+
+.card::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  font-size: 2rem;
+  font-weight: bold;
+  width: 6rem;
+  height: 2rem;
+  top: 1rem;
+  left: 20rem;
+}
+.card[data-new]::before {
+  content: "Nouveau";
+  color: #008766;
+  background-color: #99E2D0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 10%;
 }
 
 /* FOOTER */
@@ -209,6 +236,8 @@ footer div div {
 }
 footer div div a {
   padding-bottom: 1rem;
+  text-decoration: none;
+  color: #fff;
 }
 footer div div a .fas {
   padding-right: 0.5rem;
