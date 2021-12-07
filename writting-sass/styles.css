@@ -164,6 +164,26 @@ header .logo {
   flex-direction: column;
   margin: 2rem;
 }
+.menu a .card::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  font-size: 2rem;
+  font-weight: bold;
+  width: 6rem;
+  height: 2rem;
+  top: 1rem;
+  right: 1rem;
+}
+.menu a .card[data-new]::before {
+  content: "Nouveau";
+  color: #008766;
+  background-color: #99E2D0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 10%;
+}
 .menu a .card img {
   object-fit: cover;
   border-radius: 0.75rem 0.75rem 0 0;
@@ -183,40 +203,18 @@ header .logo {
 .menu a .card div div p {
   margin-top: 0.2rem;
 }
-.menu a .card div .fa-heart {
-  font-size: 25px;
-  font-weight: 600;
+.menu a .card div button {
+  padding-right: 1rem;
   position: relative;
-  right: 20px;
-  top: 20px;
-}
-.menu a .card div .fa-heart::before {
-  font-weight: 600;
+  z-index: 10;
+  color: black;
   transition: color 0.4s ease-out;
+  border: none;
+  background-color: transparent;
 }
-.menu a .card div .fa-heart:hover::before {
+.menu a .card div button:hover,
+.menu a .card div button:active {
   color: #9356DC;
-}
-
-.card::before {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  font-size: 2rem;
-  font-weight: bold;
-  width: 6rem;
-  height: 2rem;
-  top: 1rem;
-  left: 20rem;
-}
-.card[data-new]::before {
-  content: "Nouveau";
-  color: #008766;
-  background-color: #99E2D0;
-  font-size: 1.2rem;
-  font-weight: bold;
-  border-radius: 10%;
 }
 
 /* FOOTER */
@@ -241,6 +239,49 @@ footer div div a {
 }
 footer div div a .fas {
   padding-right: 0.5rem;
+}
+
+/* Maquette des Menus */
+/* TITRE */
+.titre {
+  background-color: #eaeaea;
+}
+.titre img {
+  object-fit: cover;
+  object-position: center center;
+  width: 100%;
+  height: 278px;
+}
+.titre div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  background-color: #eaeaea;
+  border-radius: 1rem 1rem 0 0;
+  bottom: 3rem;
+  height: 3rem;
+  padding: 2rem 2rem 0 2rem;
+}
+.titre div h1 {
+  font-size: 2rem;
+}
+.titre div .fa-heart {
+  font-size: 1.2rem;
+}
+
+/* ENTREES */
+.entrees {
+  background-color: #eaeaea;
+}
+.entrees h2 {
+  margin: 1rem;
+}
+.entrees ul {
+  margin: 0 auto;
+  width: 90%;
+  height: 4rem;
+  background-color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */
