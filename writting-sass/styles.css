@@ -270,18 +270,57 @@ footer div div a .fas {
   font-size: 1.2rem;
 }
 
-/* ENTREES */
-.entrees {
+/* CARTE */
+.carte {
   background-color: #eaeaea;
 }
-.entrees h2 {
-  margin: 1rem;
-}
-.entrees ul {
-  margin: 0 auto;
+.carte .entrees {
   width: 90%;
-  height: 4rem;
+  margin: 0 auto;
+  border-radius: 20%;
+}
+.carte .entrees h2 {
+  margin-bottom: 1rem;
+}
+.carte .entrees div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1rem;
   background-color: white;
+  height: 4rem;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+.carte .entrees div article {
+  flex-grow: 1;
+  padding-left: 1rem;
+}
+.carte .entrees div strong {
+  padding: 1rem;
+}
+.carte .entrees div button {
+  background-color: #99E2D0;
+  color: white;
+  border: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 0;
+}
+.carte .entrees div button svg {
+  height: 20px;
+  width: 20px;
+  transform: rotate(200deg);
+}
+.carte .entrees div:hover button {
+  transition: width 0.4s linear;
+  width: 50px;
+  padding: 1rem;
+}
+.carte .entrees div:hover button svg {
+  transform: rotate(0);
+  transition: transform 0.6s linear;
 }
 
 /*# sourceMappingURL=styles.css.map */

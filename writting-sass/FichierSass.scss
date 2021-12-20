@@ -278,22 +278,57 @@ footer{
     }
 }
 
-/* ENTREES */
+/* CARTE */
 
-.entrees{
+.carte{
     background-color: #eaeaea;
-    h2{
-        margin: 1rem;
-    }
-    ul{
-        margin: 0 auto;
+    .entrees{
         width: 90%;
-        height: 4rem;
-        background-color: white;
-        li{
-            div{
+        margin: 0 auto;
+        border-radius: 20%;
+        h2{
+            margin-bottom: 1rem;
+        }
+        div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 1rem;
+            background-color: white;
+            height: 4rem;
+            margin-bottom: 1rem;
+            overflow: hidden;
+            article{     
+                flex-grow: 1;
+                padding-left: 1rem;
                 h3{}
                 p{}
+            }
+            strong{
+                padding: 1rem;
+            }
+            button{
+                background-color: $color-tertiary;
+                color: white;
+                border: none;
+                margin: 0;
+                padding: 0;
+                height: 100%;
+                width: 0;
+                svg{
+                    height: 20px;
+                    width: 20px;
+                    transform: rotate(200deg);
+                }
+            }
+            &:hover button{ 
+                transition: width 0.4s linear;
+                width: 50px;
+                padding: 1rem;
+                svg{
+                    transform: rotate(0);
+                    transition: transform 0.6s linear;                
+                }
             }
         }
     }
