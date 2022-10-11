@@ -8,7 +8,7 @@
 body {
   font-size: 16px;
   line-height: 20px;
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .container {
@@ -16,20 +16,20 @@ body {
   flex-direction: column;
 }
 
-h2 {
-  font-family: Shrikhand, cursive;
+h1 {
+  font-family: "Shrikhand", cursive;
 }
 
 /* HEADER */
 header {
   width: 100%;
 }
-header a {
+header .Head {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   padding: 1rem 0;
 }
-header .logo {
+header .Head .logo {
   width: 50%;
 }
 
@@ -242,6 +242,15 @@ footer div div a .fas {
 }
 
 /* Maquette des Menus */
+header .Head a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+header .Head a .fa-arrow-right {
+  visibility: hidden;
+}
+
 /* TITRE */
 .titre {
   background-color: #eaeaea;
@@ -291,13 +300,17 @@ footer div div a .fas {
   height: 4rem;
   margin-bottom: 1rem;
   overflow: hidden;
+  transition: transform 0.5s;
+}
+.carte .entrees div:hover {
+  transform: none;
 }
 .carte .entrees div article {
   flex-grow: 1;
   padding-left: 1rem;
 }
 .carte .entrees div strong {
-  padding: 1rem;
+  padding: 2rem 1rem 1rem 1rem;
 }
 .carte .entrees div button {
   background-color: #99E2D0;
