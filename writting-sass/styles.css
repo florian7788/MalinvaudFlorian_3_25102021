@@ -251,6 +251,22 @@ header .Head a .fa-arrow-right {
   visibility: hidden;
 }
 
+.validation {
+  background-color: #f6f6f6;
+  width: 100%;
+  display: flex;
+}
+.validation .commander {
+  width: 50%;
+  height: 4rem;
+  font-size: 1.5rem;
+  margin: 3rem auto;
+  border-radius: 2rem;
+  border-style: none;
+  color: white;
+  background: linear-gradient(170deg, #ff93e1, 50%, #782cd3);
+}
+
 /* TITRE */
 .titre {
   background-color: #eaeaea;
@@ -283,15 +299,18 @@ header .Head a .fa-arrow-right {
 .carte {
   background-color: #eaeaea;
 }
-.carte .entrees {
+.carte .entrees, .carte .plats, .carte .desserts {
   width: 90%;
   margin: 0 auto;
   border-radius: 20%;
 }
-.carte .entrees h2 {
+.carte .entrees h2, .carte .plats h2, .carte .desserts h2 {
   margin-bottom: 1rem;
+  border-bottom: solid 2px #99E2D0;
+  width: 15%;
+  height: 2rem;
 }
-.carte .entrees div {
+.carte .entrees div, .carte .plats div, .carte .desserts div {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -302,17 +321,17 @@ header .Head a .fa-arrow-right {
   overflow: hidden;
   transition: transform 0.5s;
 }
-.carte .entrees div:hover {
+.carte .entrees div:hover, .carte .plats div:hover, .carte .desserts div:hover {
   transform: none;
 }
-.carte .entrees div article {
+.carte .entrees div article, .carte .plats div article, .carte .desserts div article {
   flex-grow: 1;
   padding-left: 1rem;
 }
-.carte .entrees div strong {
+.carte .entrees div strong, .carte .plats div strong, .carte .desserts div strong {
   padding: 2rem 1rem 1rem 1rem;
 }
-.carte .entrees div button {
+.carte .entrees div button, .carte .plats div button, .carte .desserts div button {
   background-color: #99E2D0;
   color: white;
   border: none;
@@ -321,17 +340,17 @@ header .Head a .fa-arrow-right {
   height: 100%;
   width: 0;
 }
-.carte .entrees div button svg {
+.carte .entrees div button svg, .carte .plats div button svg, .carte .desserts div button svg {
   height: 20px;
   width: 20px;
   transform: rotate(200deg);
 }
-.carte .entrees div:hover button {
+.carte .entrees div:hover button, .carte .plats div:hover button, .carte .desserts div:hover button {
   transition: width 0.4s linear;
   width: 50px;
   padding: 1rem;
 }
-.carte .entrees div:hover button svg {
+.carte .entrees div:hover button svg, .carte .plats div:hover button svg, .carte .desserts div:hover button svg {
   transform: rotate(0);
   transition: transform 0.6s linear;
 }

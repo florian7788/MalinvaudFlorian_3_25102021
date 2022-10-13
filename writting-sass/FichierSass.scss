@@ -264,6 +264,21 @@ header{
         }
     }
 }
+.validation{
+    background-color: #f6f6f6;
+        width: 100%;
+        display: flex;
+    .commander{
+        width: 50%;
+            height: 4rem;
+            font-size: 1.5rem;
+            margin:3rem auto;
+            border-radius: 2rem;
+            border-style: none;
+            color: white;
+            background: linear-gradient(170deg, lighten($color-secondary, 5), 50%, darken($color-primary, 10));
+    }
+}
 /* TITRE */
 
 .titre{
@@ -297,12 +312,16 @@ header{
 
 .carte{
     background-color: #eaeaea;
-    .entrees{
+    .entrees, .plats, .desserts{
         width: 90%;
         margin: 0 auto;
         border-radius: 20%;
+        
         h2{
             margin-bottom: 1rem;
+            border-bottom: solid 2px $color-tertiary;
+            width: 15%;
+            height: 2rem;
         }
         div{
             display: flex;
